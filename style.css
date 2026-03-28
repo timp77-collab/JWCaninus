@@ -46,6 +46,11 @@ p {
   color: #444;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* ===== BILDER (GALLERI-KÄNSLA) ===== */
 img {
   width: 220px;
@@ -93,4 +98,28 @@ button {
 button:hover {
   background: #333;
   transform: scale(1.03);
+}
+
+/* MOBILE FIX LÄNGST NER */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
 }
