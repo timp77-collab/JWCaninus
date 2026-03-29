@@ -131,3 +131,24 @@ footer.promo {
   color: #666;
   text-align: center;
 }
+
+/* ===== GALLERY GRID ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
